@@ -88,12 +88,12 @@ public class PlaceManagerImpl
     /**
      * Activities that have been created by us but not destroyed (TODO: move this state tracking to ActivityManager!).
      */
-    private final Map<PlaceRequest, Activity> existingWorkbenchActivities = new HashMap<PlaceRequest, Activity>();
+    protected final Map<PlaceRequest, Activity> existingWorkbenchActivities = new HashMap<PlaceRequest, Activity>();
 
     /**
      * Places that are currently open in the current perspective.
      */
-    private final Map<PlaceRequest, PartDefinition> visibleWorkbenchParts = new HashMap<PlaceRequest, PartDefinition>();
+    protected final Map<PlaceRequest, PartDefinition> visibleWorkbenchParts = new HashMap<PlaceRequest, PartDefinition>();
 
     /**
      * Custom panels we have opened but not yet closed.

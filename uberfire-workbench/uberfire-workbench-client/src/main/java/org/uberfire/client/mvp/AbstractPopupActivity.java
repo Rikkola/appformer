@@ -32,6 +32,8 @@ public abstract class AbstractPopupActivity extends AbstractActivity implements 
 
     private final PopupView popup;
 
+    public abstract Object getRealPresenter();
+
     /**
      * Interlock to prevent a call back into PlaceManager.closePlace() when this activity is already in the process of
      * closing.

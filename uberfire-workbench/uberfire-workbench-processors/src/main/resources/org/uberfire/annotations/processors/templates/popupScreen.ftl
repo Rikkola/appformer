@@ -65,6 +65,8 @@ public class ${className} extends AbstractPopupActivity {
 </#list>
     private ${realClassName} realPresenter;
 
+@Override
+public Object getRealPresenter() {return realPresenter; }
     @Inject
     //Constructor injection for testing
     public ${className}( final PlaceManager placeManager, final PopupView view ) {

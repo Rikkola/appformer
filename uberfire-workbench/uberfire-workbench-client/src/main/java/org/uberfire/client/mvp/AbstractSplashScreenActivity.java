@@ -40,6 +40,8 @@ public abstract class AbstractSplashScreenActivity extends AbstractActivity impl
     private Boolean showAgain;
     private SplashScreenFilter splashFilter;
 
+    public abstract Object getRealPresenter();
+
     @Inject
     public AbstractSplashScreenActivity(final PlaceManager placeManager,
                                         final SplashView splash) {

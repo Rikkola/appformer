@@ -172,6 +172,11 @@ public class WorkbenchEditorActivityTest {
         }
 
         @Override
+        public Object getRealPresenter() {
+            return null;
+        }
+
+        @Override
         public String getTitle() {
             return null;
         }

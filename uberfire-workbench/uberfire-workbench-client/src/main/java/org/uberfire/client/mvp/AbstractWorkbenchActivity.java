@@ -30,6 +30,8 @@ import org.uberfire.workbench.model.toolbar.ToolBar;
  */
 public abstract class AbstractWorkbenchActivity extends AbstractActivity implements WorkbenchActivity {
 
+    public abstract Object getRealPresenter();
+
     public AbstractWorkbenchActivity(final PlaceManager placeManager) {
         super(placeManager);
     }

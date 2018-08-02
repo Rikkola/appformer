@@ -173,6 +173,11 @@ public class AbstractPopupActivityTest extends AbstractActivityTest {
 
     private final class TestingPopupActivity extends AbstractPopupActivity {
 
+        @Override
+        public Object getRealPresenter() {
+            return null;
+        }
+
         public TestingPopupActivity(PlaceManager placeManager,
                                     PopupView popupView) {
             super(placeManager,

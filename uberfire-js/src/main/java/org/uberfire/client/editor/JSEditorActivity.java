@@ -122,6 +122,11 @@ public class JSEditorActivity extends AbstractWorkbenchEditorActivity {
     }
 
     @Override
+    public Object getRealPresenter() {
+        return null;
+    }
+
+    @Override
     public String getTitle() {
         return nativeEditor.getTitle();
     }

@@ -47,6 +47,9 @@ public class ${className} extends AbstractWorkbenchContextActivity {
     @Inject
     private ${realClassName} realPresenter;
 
+@Override
+public Object getRealPresenter() {return realPresenter; }
+
     @Inject
     //Constructor injection for testing
     public ${className}(final PlaceManager placeManager) {

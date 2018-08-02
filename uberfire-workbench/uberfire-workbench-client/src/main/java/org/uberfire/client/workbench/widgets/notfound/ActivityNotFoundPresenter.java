@@ -36,6 +36,11 @@ public class ActivityNotFoundPresenter extends AbstractPopupActivity {
     @Inject
     private PlaceManager placeManager;
 
+    @Override
+    public Object getRealPresenter() {
+        return null;
+    }
+
     @Inject
     //Constructor injection for testing
     public ActivityNotFoundPresenter(final PlaceManager placeManager,

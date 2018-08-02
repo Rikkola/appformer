@@ -54,7 +54,7 @@ public class ActivityManagerImpl implements ActivityManager {
      * shut down yet. This set tracks objects by identity, so it is possible that it could have multiple activities of
      * the same type within it (for example, multiple editors of the same type for different files.)
      */
-    private final Map<Activity, PlaceRequest> startedActivities = new IdentityHashMap<Activity, PlaceRequest>();
+    protected final Map<Activity, PlaceRequest> startedActivities = new IdentityHashMap<Activity, PlaceRequest>();
     private final Map<Object, Boolean> containsCache = new HashMap<Object, Boolean>();
     @Inject
     private SyncBeanManager iocManager;

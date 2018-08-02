@@ -99,6 +99,8 @@ public class ${className} extends AbstractWorkbenchEditorActivity {
 </#list>
     private ${realClassName} realPresenter;
 
+@Override
+public Object getRealPresenter() {return realPresenter; }
     @Inject
     //Constructor injection for testing
     public ${className}(<#if isDynamic>@Shared </#if>final PlaceManager placeManager) {
