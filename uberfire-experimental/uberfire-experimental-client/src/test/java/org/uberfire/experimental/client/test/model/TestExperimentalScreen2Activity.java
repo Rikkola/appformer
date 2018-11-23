@@ -22,6 +22,11 @@ import org.uberfire.client.mvp.PlaceManager;
 
 public class TestExperimentalScreen2Activity extends AbstractWorkbenchScreenActivity {
 
+    @Override
+    public Object getRealPresenter() {
+        return null;
+    }
+
     public TestExperimentalScreen2Activity(PlaceManager placeManager) {
         super(placeManager);
     }

@@ -54,6 +54,11 @@ public class DisabledFeatureActivity extends AbstractWorkbenchScreenActivity {
     }
 
     @Override
+    public Object getRealPresenter() {
+        return null;
+    }
+
+    @Override
     public String getTitle() {
         return translationService.getTranslation(UberfireExperimentalConstants.disabledFeatureTitle);
     }
